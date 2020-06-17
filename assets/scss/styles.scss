@@ -10,6 +10,23 @@ $container-max-widths: (
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Custom SCSS
+
+// ----------
+// 0: General Styles
+// ----------
 * {
   font-family: $header-font;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: $body-font;
+}
+
+// Header
+
+@import "components/header";
