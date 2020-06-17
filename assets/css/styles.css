@@ -299,13 +299,13 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.2; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 4rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 3.2rem; }
 
 h3, .h3 {
-  font-size: 1.75rem; }
+  font-size: 2.5rem; }
 
 h4, .h4 {
   font-size: 1.5rem; }
@@ -7150,11 +7150,14 @@ body {
 p {
   font-family: "Open-Sans", sans-serif; }
 
+#main {
+  background: #151515; }
+  @media (max-width: 720px) {
+    #main {
+      margin-top: 56px; } }
+
 .navbar {
   padding-top: 20px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
   width: 100%;
   z-index: 99;
   padding-left: 60px;
@@ -7163,11 +7166,13 @@ p {
   @media (max-width: 720px) {
     .navbar {
       padding-left: 30px;
-      padding-right: 30px; } }
+      padding-right: 30px;
+      background: #333333; } }
   @media (max-width: 540px) {
     .navbar {
       padding-left: 20px;
-      padding-right: 20px; } }
+      padding-right: 20px;
+      background: #151515; } }
   .navbar .navbar-brand {
     color: #fff;
     transition: all 300ms ease-in 500ms; }
@@ -7195,3 +7200,30 @@ p {
     transition: all 0.3s ease 0s; }
     .navbar .top-social i:hover {
       color: #cd2d25; }
+
+.hero-section .carousel .carousel-inner img {
+  height: 100vh;
+  object-fit: cover; }
+  @media (max-width: 720px) {
+    .hero-section .carousel .carousel-inner img {
+      height: 70vh; } }
+
+.hero-section .carousel .carousel-inner .carousel-caption {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  margin-left: 15%;
+  text-align: left;
+  text-transform: uppercase; }
+  @media (max-width: 720px) {
+    .hero-section .carousel .carousel-inner .carousel-caption {
+      text-align: center; }
+      .hero-section .carousel .carousel-inner .carousel-caption .container,
+      .hero-section .carousel .carousel-inner .carousel-caption .row {
+        padding: 0; }
+      .hero-section .carousel .carousel-inner .carousel-caption h1 {
+        font-size: 2.2rem; }
+      .hero-section .carousel .carousel-inner .carousel-caption p {
+        font-size: 0.8rem; } }

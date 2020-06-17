@@ -6,6 +6,13 @@ $container-max-widths: (
   xl: 1380px
 ) !default;
 
+$h1-font-size: 4rem;
+$h2-font-size: 3.2rem;
+$h3-font-size: 2.5rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
 // Import Boostrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -27,6 +34,19 @@ p {
   font-family: $body-font;
 }
 
-// Header
+#main {
+  background: $black;
 
+  @media (max-width: 720px) {
+    margin-top: 56px;
+  }
+
+  @media (max-width: 540px) {
+  }
+}
+
+// Header
 @import "components/header";
+
+// Carousel
+@import "components/carousel";
