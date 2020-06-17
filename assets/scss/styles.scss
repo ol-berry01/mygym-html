@@ -1,0 +1,15 @@
+// Imports
+@import "variables";
+
+// Bootstrap Overrides
+$container-max-widths: (
+  xl: 1380px
+) !default;
+
+// Import Boostrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Custom SCSS
+* {
+  font-family: $header-font;
+}

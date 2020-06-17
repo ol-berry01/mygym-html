@@ -1,0 +1,15 @@
+{
+  "name": "mygym",
+  "version": "2.0.0",
+  "description": "MyGym Salisbury website revamp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "node-sass": "^4.14.1"
+  }
+}
