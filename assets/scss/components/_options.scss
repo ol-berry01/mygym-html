@@ -1,0 +1,92 @@
+.options-section {
+  padding: 5rem 0;
+  background-size: cover;
+
+  .container {
+    max-width: 1200px;
+
+    .section-title {
+      color: #fff;
+      text-align: center;
+
+      p {
+        width: 70%;
+
+        @media (max-width: 768px) {
+          width: 90%;
+        }
+      }
+    }
+    .card {
+      padding: 2rem 3rem;
+      border: none;
+
+      border-radius: 0;
+      overflow: hidden;
+      transition: box-shadow 200ms ease-out;
+
+      @media (max-width: 768px) {
+        padding: 1.5rem 1rem;
+      }
+
+      .option {
+        position: relative;
+        text-align: center;
+
+        h2 {
+          color: $primary-colour;
+          font-weight: 900;
+          position: relative;
+          // left: -0.25rem;
+
+          span {
+            margin-right: 0.5rem;
+            color: #272727;
+            font-size: 2rem;
+            font-weight: 400;
+          }
+        }
+
+        h4 {
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+
+        .card-text {
+          list-style: none;
+          padding: 0;
+
+          li {
+            line-height: 3rem;
+          }
+        }
+      }
+
+      .tic-text {
+        width: 160px;
+        height: 40px;
+        background: $primary-colour;
+        position: absolute;
+        right: -67px;
+        top: -5px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+        i {
+          color: #ffffff;
+          position: absolute;
+          left: 69px;
+          top: 15px;
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+
+          &::before {
+            content: "\f005";
+          }
+        }
+      }
+    }
+  }
+}
