@@ -1,0 +1,18 @@
+.cta {
+  background: #fff;
+  text-align: center;
+
+  h3 {
+    color: $black;
+    margin-bottom: 0;
+
+    .cta-price {
+      color: $primary-colour;
+      font-size: 3.2rem;
+    }
+    @media (max-width: 720px) {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}

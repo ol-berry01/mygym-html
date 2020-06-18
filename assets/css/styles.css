@@ -7156,6 +7156,58 @@ p {
     #main {
       margin-top: 56px; } }
 
+.btn-mygym {
+  color: #151515;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #e4381c), to(#cd2d25)), -webkit-gradient(linear, left top, right top, from(#e4381c), color-stop(0%, #cd2d25));
+  background-image: -o-linear-gradient(left, #e4381c 100%, #cd2d25 100%), -o-linear-gradient(left, #e4381c 0%, #cd2d25 0%);
+  background-image: linear-gradient(to right, #e4381c 100%, #cd2d25 100%), linear-gradient(to right, #e4381c 0%, #cd2d25 0%);
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  padding: 0 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 46px;
+  border-left: 2px solid #cd2d25;
+  border-right: 2px solid #e4381c;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  line-height: 45px;
+  position: relative;
+  border-radius: 4px;
+  transition-duration: 330ms;
+  -webkit-transition-duration: 330ms;
+  -o-transition-duration: 330ms;
+  z-index: 1; }
+  .btn-mygym:hover {
+    color: #fff; }
+  .btn-mygym::after {
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    background: #cc4627;
+    background: -webkit-gradient(linear, left top, right top, from(#cc4627), to(#cd2d25));
+    background: -o-linear-gradient(left, #cc4627, #cd2d25);
+    background: linear-gradient(to right, #cc4627, #cd2d25);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 2px;
+    opacity: 0; }
+  .btn-mygym:hover::after {
+    color: #fff;
+    opacity: 1; }
+
 .navbar {
   padding-top: 20px;
   width: 100%;
@@ -7167,7 +7219,7 @@ p {
     .navbar {
       padding-left: 30px;
       padding-right: 30px;
-      background: #333333; } }
+      background: #151515; } }
   @media (max-width: 540px) {
     .navbar {
       padding-left: 20px;
@@ -7217,6 +7269,8 @@ p {
   margin-left: 15%;
   text-align: left;
   text-transform: uppercase; }
+  .hero-section .carousel .carousel-inner .carousel-caption .btn.btn-mygym {
+    color: #fff; }
   @media (max-width: 720px) {
     .hero-section .carousel .carousel-inner .carousel-caption {
       text-align: center; }
@@ -7227,3 +7281,17 @@ p {
         font-size: 2.2rem; }
       .hero-section .carousel .carousel-inner .carousel-caption p {
         font-size: 0.8rem; } }
+
+.cta {
+  background: #fff;
+  text-align: center; }
+  .cta h3 {
+    color: #151515;
+    margin-bottom: 0; }
+    .cta h3 .cta-price {
+      color: #cd2d25;
+      font-size: 3.2rem; }
+    @media (max-width: 720px) {
+      .cta h3 {
+        font-size: 1.4rem;
+        text-align: center; } }

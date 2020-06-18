@@ -11,10 +11,10 @@
   @media (max-width: 720px) {
     padding-left: 30px;
     padding-right: 30px;
-    background: rgba(51, 51, 51, 1);
+    background: $black;
   }
 
-  @media (max-width: 540px,) {
+  @media (max-width: 540px) {
     padding-left: 20px;
     padding-right: 20px;
     background: $black;

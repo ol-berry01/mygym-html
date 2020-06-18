@@ -20,6 +20,10 @@
         text-align: left;
         text-transform: uppercase;
 
+        .btn.btn-mygym {
+          color: #fff;
+        }
+
         @media (max-width: 720px) {
           text-align: center;
 
