@@ -7165,11 +7165,10 @@ p {
   font-size: 14px;
   font-family: "Exo", sans-serif;
   font-weight: 600;
-  padding: 0 12px;
+  padding: 0.25rem 3rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
-  height: 46px;
   border-left: 2px solid #cd2d25;
   border-right: 2px solid #e4381c;
   -webkit-box-sizing: border-box;
@@ -7207,6 +7206,19 @@ p {
   .btn-mygym:hover::after {
     color: #fff;
     opacity: 1; }
+  @media (max-width: 1200px) {
+    .btn-mygym {
+      padding: 0.25rem 1.5rem; } }
+
+.item-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.mygym-shadow {
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3); }
+  .mygym-shadow:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); }
 
 .navbar {
   padding-top: 20px;
@@ -7295,3 +7307,90 @@ p {
       .cta h3 {
         font-size: 1.4rem;
         text-align: center; } }
+
+.feature-item {
+  color: #fff;
+  height: 400px;
+  margin: 0;
+  padding: 100px 1rem 3rem;
+  text-align: center; }
+  .feature-item h3 {
+    margin-bottom: 2rem;
+    font-size: 1.875rem;
+    text-transform: uppercase; }
+    .feature-item h3::after {
+      content: "";
+      width: 30%;
+      background-color: #cd2d25;
+      height: 2px;
+      display: block;
+      position: relative;
+      left: 35%;
+      top: 1rem; }
+  .feature-item p {
+    width: 70%; }
+  .feature-item button {
+    color: #fff; }
+
+.options-section {
+  padding: 5rem 0;
+  background-size: cover; }
+  .options-section .container {
+    max-width: 1200px; }
+    .options-section .container .section-title {
+      color: #fff;
+      text-align: center; }
+      .options-section .container .section-title p {
+        width: 70%; }
+        @media (max-width: 768px) {
+          .options-section .container .section-title p {
+            width: 90%; } }
+    .options-section .container .card {
+      padding: 2rem 3rem;
+      border: none;
+      border-radius: 0;
+      overflow: hidden;
+      transition: box-shadow 200ms ease-out; }
+      @media (max-width: 768px) {
+        .options-section .container .card {
+          padding: 1.5rem 1rem; } }
+      .options-section .container .card .option {
+        position: relative;
+        text-align: center; }
+        .options-section .container .card .option h2 {
+          color: #cd2d25;
+          font-weight: 900;
+          position: relative; }
+          .options-section .container .card .option h2 span {
+            margin-right: 0.5rem;
+            color: #272727;
+            font-size: 2rem;
+            font-weight: 400; }
+        .options-section .container .card .option h4 {
+          text-transform: uppercase;
+          font-weight: 700; }
+        .options-section .container .card .option .card-text {
+          list-style: none;
+          padding: 0; }
+          .options-section .container .card .option .card-text li {
+            line-height: 3rem; }
+      .options-section .container .card .tic-text {
+        width: 160px;
+        height: 40px;
+        background: #cd2d25;
+        position: absolute;
+        right: -67px;
+        top: -5px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+        .options-section .container .card .tic-text i {
+          color: #ffffff;
+          position: absolute;
+          left: 69px;
+          top: 15px;
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+          .options-section .container .card .tic-text i::before {
+            content: "\f005"; }

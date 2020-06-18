@@ -55,11 +55,11 @@ p {
   font-size: 14px;
   font-family: "Exo", sans-serif;
   font-weight: 600;
-  padding: 0 12px;
+  padding: 0.25rem 3rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
-  height: 46px;
+  // height: 46px;
   border-left: 2px solid $primary-colour;
   border-right: 2px solid #e4381c;
   -webkit-box-sizing: border-box;
@@ -105,6 +105,26 @@ p {
     // background: $primary-colour;
     opacity: 1;
   }
+
+  @media (max-width: 1200px) {
+    padding: 0.25rem 1.5rem;
+  }
+}
+
+// Background Image
+.item-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+// Shadow
+.mygym-shadow {
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  }
 }
 
 // Header
@@ -115,3 +135,9 @@ p {
 
 // CTA
 @import "components/cta";
+
+// Features
+@import "components/features";
+
+// Options
+@import "components/options";
