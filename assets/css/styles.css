@@ -7147,6 +7147,18 @@ body {
   margin: 0;
   padding: 0; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+
 p {
   font-family: "Open-Sans", sans-serif; }
 
@@ -7307,6 +7319,41 @@ p {
       .cta h3 {
         font-size: 1.4rem;
         text-align: center; } }
+
+.about-section {
+  background-size: cover;
+  padding: 8rem 3rem 3rem;
+  color: #fff; }
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 5rem 1rem 2rem; } }
+  @media (max-width: 576px) {
+    .about-section .section-title h1 {
+      font-size: 1.85rem; }
+    .about-section .section-title .lead {
+      font-size: 1.15rem; } }
+  .about-section .about-us {
+    margin: 2rem 0; }
+    .about-section .about-us .col-md-6 {
+      margin: 1rem 0 2rem;
+      padding: 0 2rem; }
+      @media (max-width: 576px) {
+        .about-section .about-us .col-md-6 {
+          padding: 0 15px; } }
+    .about-section .about-us .about-header {
+      margin-bottom: 2rem; }
+      .about-section .about-us .about-header .about-icon {
+        width: 48px;
+        height: 48px;
+        margin-right: 48px; }
+      .about-section .about-us .about-header .about-title {
+        text-align: right;
+        display: inline-block; }
+      @media (max-width: 768px) {
+        .about-section .about-us .about-header {
+          margin-bottom: 1rem; }
+          .about-section .about-us .about-header .about-title {
+            font-size: 1.35rem; } }
 
 .feature-item {
   color: #fff;
