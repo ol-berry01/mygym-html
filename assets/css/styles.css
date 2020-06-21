@@ -7278,23 +7278,38 @@ p {
       color: #cd2d25; }
 
 .hero-section .carousel .carousel-inner img {
-  height: 100vh;
+  height: 87vh;
   object-fit: cover; }
-  @media (max-width: 720px) {
+  @media (max-width: 1024px) {
     .hero-section .carousel .carousel-inner img {
-      height: 70vh; } }
+      height: 82vh; } }
+  @media (max-width: 768px) {
+    .hero-section .carousel .carousel-inner img {
+      height: 75vh; } }
 
 .hero-section .carousel .carousel-inner .carousel-caption {
-  position: absolute;
-  top: 35%;
-  left: 0;
-  width: 70%;
-  height: 100%;
-  margin-left: 15%;
+  /* position: absolute; */
+  top: 72px;
+  /* left: 0; */
+  /* width: 70%; */
+  height: calc(100% - 130px);
+  padding: 0;
+  /* margin-left: 15%; */
   text-align: left;
   text-transform: uppercase; }
+  .hero-section .carousel .carousel-inner .carousel-caption .container,
+  .hero-section .carousel .carousel-inner .carousel-caption .row {
+    height: 100%; }
+  .hero-section .carousel .carousel-inner .carousel-caption h1 {
+    color: transparent;
+    letter-spacing: 2.5px;
+    -webkit-text-stroke: 3px white;
+    font-weight: 700; }
   .hero-section .carousel .carousel-inner .carousel-caption .btn.btn-mygym {
     color: #fff; }
+  @media (max-width: 1024px) {
+    .hero-section .carousel .carousel-inner .carousel-caption {
+      text-align: center; } }
   @media (max-width: 720px) {
     .hero-section .carousel .carousel-inner .carousel-caption {
       text-align: center; }
@@ -7308,13 +7323,39 @@ p {
 
 .cta {
   background: #fff;
+  height: 13vh;
   text-align: center; }
+  .cta .container,
+  .cta .row {
+    height: 100%; }
+  @media (max-width: 1024px) {
+    .cta {
+      height: 18vh; }
+      .cta .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+        padding: 0 0 1rem; } }
+  @media (max-width: 768px) {
+    .cta {
+      height: 25vh; }
+      .cta .col-md-8 {
+        width: 80%;
+        padding: 0 0 1rem; } }
   .cta h3 {
     color: #151515;
     margin-bottom: 0; }
+    @media (max-width: 768px) {
+      .cta h3 {
+        font-size: 2rem; } }
     .cta h3 .cta-price {
       color: #cd2d25;
       font-size: 3.2rem; }
+      @media (max-width: 1024px) {
+        .cta h3 .cta-price {
+          font-size: 2.8rem; } }
+      @media (max-width: 768px) {
+        .cta h3 .cta-price {
+          font-size: 2.2rem; } }
     @media (max-width: 720px) {
       .cta h3 {
         font-size: 1.4rem;
@@ -7345,7 +7386,7 @@ p {
       .about-section .about-us .about-header .about-icon {
         width: 48px;
         height: 48px;
-        margin-right: 48px; }
+        margin-right: 2rem; }
       .about-section .about-us .about-header .about-title {
         text-align: right;
         display: inline-block; }
